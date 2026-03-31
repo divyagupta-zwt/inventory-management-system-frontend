@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://inventory-management-system-backend-production-1d53.up.railway.app/api",
+  baseURL: import.meta.env.VITE_APP_API_URL,
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
